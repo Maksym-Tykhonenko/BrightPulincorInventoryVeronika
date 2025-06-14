@@ -754,7 +754,7 @@ const App = () => {
 
   return (
     <NavigationContainer>
-      {!louderPrevIsEnded || !aceptTransperency || !completeLink ? (
+      {!louderPrevIsEnded ? (
         <View
         style={{
           position: 'relative',
