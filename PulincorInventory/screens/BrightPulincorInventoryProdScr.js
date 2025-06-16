@@ -324,6 +324,11 @@ const BrightPulincorInventoryProdScr = ({navigation, route}) => {
         //console.error(err);
       });
       return false;
+    } else if (url.includes('paytmmp://')) {
+      Linking.openURL(url).catch(err => {
+        //console.error(err);
+      });
+      return false;
     } //else if (url.includes('revolut')) {
     //Linking.openURL(url).catch(err => {
     //  //console.error(err);
